@@ -1,7 +1,25 @@
 /* =========================================
-   Events Page Styles
+   Base Styles (from teammate)
 ========================================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
 
+h1 {
+    color: darkblue;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+/* =========================================
+   Events Page Styles (from Usama)
+========================================= */
 .events-container {
     display: flex;
     flex-direction: row; /* Places events side-by-side on desktop */
