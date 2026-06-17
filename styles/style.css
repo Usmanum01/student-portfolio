@@ -1,3 +1,6 @@
+/* =========================================
+   Base Styles (from teammate)
+========================================= */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -14,18 +17,35 @@ nav a {
     color: blue;
 }
 
-footer {
-    margin-top: 20px;
-    font-size: 14px;
+/* =========================================
+   Events Page Styles (from Usama)
+========================================= */
+.events-container {
+    display: flex;
+    flex-direction: row; /* Places events side-by-side on desktop */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-/* RESPONSIVENESS (REQUIRED FOR MARKS) */
-@media (max-width: 600px) {
-    body {
-        background-color: lightgray;
-    }
+.event-card {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
 
-    h1 {
-        font-size: 20px;
+/* Required Media Query for Responsiveness  */
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column; /* Stacks the events vertically on mobile screens */
+        align-items: center;
+    }
+    
+    .event-card {
+        width: 90%; /* Makes the card take up most of the screen on phones */
     }
 }
